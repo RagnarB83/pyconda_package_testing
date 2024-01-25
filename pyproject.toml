@@ -1,0 +1,26 @@
+[project]
+name = "pyconda_package_testing"
+version = "0.1"
+description = "pyconda_package_testing is a test package"
+authors = [
+  {name = "R. Bjornsson", email = "sdf" }
+]
+readme = "README.md"
+#Some problem with 3.12 (jan 2024)
+requires-python = ">= 3.7, < 3.12"
+#geometric and numpy main dependencies
+dependencies = [
+    'geometric >=1.0.1',
+    'numpy',
+]
+#optional dependencies
+
+[build-system]
+requires = ["setuptools >=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ['pyconda_package_testing*']
+
+[tool.setuptools.package-data]
+"*" = ["*.*"] #
