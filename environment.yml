@@ -7,5 +7,6 @@ dependencies:
   - numpy
   - matplotlib
   - geometric
+  - xtb
   - pip:
     - geometric
