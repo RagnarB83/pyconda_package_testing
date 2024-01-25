@@ -1,0 +1,5 @@
+name: conda env for ASH
+
+dependencies:
+  - python=3.10
+  - numpy
