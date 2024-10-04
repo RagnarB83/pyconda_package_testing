@@ -30,6 +30,7 @@ jobs:
         post-cleanup: 'all'
     - name: Install dependencies
       run: |
+        conda install conda-forge::libmamba  
         conda env update --file environment.yml --name base
     - name: Check conda env
       run: |
