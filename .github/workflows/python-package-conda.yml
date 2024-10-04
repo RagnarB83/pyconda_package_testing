@@ -32,6 +32,15 @@ jobs:
       - name: Check conda env
         run: |
           conda list
+      - name: check stuff
+        run: |
+           which python
+           which conda
+           which mamba
+           which pip
+           echo $PATH
+           which xtb
+           env
       - name: Lint with flake8
         run: |
           pip install flake8
