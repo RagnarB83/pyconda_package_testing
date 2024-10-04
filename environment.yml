@@ -1,4 +1,4 @@
-name: conda env for ASH
+name: conda_env_for_ASH
 channels:
   - conda-forge
 dependencies:
