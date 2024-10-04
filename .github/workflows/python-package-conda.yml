@@ -22,10 +22,9 @@ jobs:
         with:
           python-version: 3.6
           mamba-version: "*"
-          channels: conda-forge,defaults
+          channels: conda-forge
+          miniforge-version: latest
           channel-priority: true
-          activate-environment: anaconda-client-env
-          environment-file: etc/example-environment.yml
     - shell: bash -el {0}
         run: |
           conda info
